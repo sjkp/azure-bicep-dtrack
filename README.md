@@ -27,3 +27,22 @@ When generating your credentials (in this example we store in a secret named AZU
 az ad sp create-for-rbac --name "{sp-name}" --sdk-auth --role contributor --scopes /subscriptions/{subscription-id}
 ```
 Note: the `sp-name` must be a subdomain of your tenant name, e.g. `ghaction.<your-tenant>.onmicrosoft.com`
+
+
+
+## Trivy 
+curl https://github.com/aquasecurity/trivy/releases/download/v0.51.4/trivy_0.51.4_windows-64bit.zip 
+
+wget https://github.com/aquasecurity/trivy/releases/download/v0.51.4/trivy_0.51.4_Linux-64bit.deb
+sudo dpkg -i trivy_0.51.4_Linux-64bit.deb
+
+
+
+## Setup openid
+https://itsleandro.medium.com/dependency-track-with-azure-ad-openid-connect-b2d13861c4f5
+
+
+
+
+
+https://www.huuhka.net/azure-devops-agents-in-azure-container-apps/
